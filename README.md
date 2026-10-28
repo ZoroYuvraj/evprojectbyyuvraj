@@ -33,7 +33,26 @@ How do vehicle category, manufacturer, region, battery technology, price, perfor
 | `data/raw/ev_market_train.csv` | 200,000 | 37 | Primary Tableau analysis |
 | `data/raw/ev_market_test.csv` | 100,000 | 37 | Separate validation/reference file |
 
-The files were supplied by the project owner without a publisher, collection method, or license. Treat the values as educational/simulated until their provenance is confirmed. Do not present them as independently verified real-world sales or customer survey results. `annual_sales_units` is the measure as supplied; its exact units and time window are unconfirmed. Train and test rows should not be combined for headline totals.
+The files were supplied by the project owner. No publisher, collection method, or data license was provided. Until provenance is confirmed, treat the data as educational or simulated and avoid presenting results as verified real-world EV market facts.
+
+## Data interpretation and methodology
+
+### Dataset scope
+
+- Use `ev_market_train.csv` as the primary source for Tableau analysis.
+- Keep `ev_market_test.csv` separate for validation or reference. Do not combine train and test rows in headline totals without a documented reason.
+- The supplied CSVs contain 37 columns each. Where brief screenshots show 39 columns or example metrics, use the actual files and recalculate all results from them.
+
+### Measures and records
+
+- `annual_sales_units` is analyzed as provided. Its unit definition and reporting time window have not been verified, so describe it as the **recorded annual sales measure**, not confirmed units sold.
+- A row is a vehicle record/model observation. Do not interpret each row as a unique vehicle registration.
+- Training data has 200,000 rows and 199,999 distinct `vehicle_id` values. Use distinct IDs for unique-record counts and disclose the repeated ID when relevant.
+- Customer rating is averaged from the supplied field (about 4.09 in training data). Confirm the rating scale before calling it a score out of 5.
+
+### Source and attribution
+
+No original publisher, collection method, or redistribution license accompanied the CSV files. Confirm their provenance and permission with the project mentor before public Tableau publishing or redistribution.
 
 ## Repository contents
 

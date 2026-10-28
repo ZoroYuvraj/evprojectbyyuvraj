@@ -2,6 +2,13 @@
 
 An end-to-end Tableau analytics project built from the supplied EV market train/test CSV files. The repository contains the source data, a repeatable data profile script, the packaged Tableau workbook, a step-by-step guide, report, and demo notes.
 
+## Project ownership and contact
+
+**Project author:** Yuvraj Devda  
+**Contact:** [yuvrajdevdaji@gmail.com](mailto:yuvrajdevdaji@gmail.com)
+
+Unless a file states otherwise, the original project documentation, scripts, and Tableau workbook are © 2026 Yuvraj Devda. No license granting reuse or redistribution is provided. Contact the author for permission before copying or redistributing these project materials. Dataset ownership and redistribution rights are separate; see the data notes below.
+
 ## Current workbook deliverable
 
 Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. It is a packaged workbook with the training CSV included. It contains five worksheets—sales by category, sales by manufacturer, annual sales trend, sales by battery type, and average customer rating by category—plus the **EV Market Performance & Insights** dashboard. The manufacturer sheet is limited to the top 10 labels by summed annual sales units. A category filter is available on its worksheet, and the dashboard category chart can be used as a filter action. The Tableau Story has an overview scene and an annual-sales-trend scene with captions.

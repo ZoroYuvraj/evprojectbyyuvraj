@@ -33,6 +33,21 @@ The workbook is an educational draft. KPI cards, more visualizations, a timed pe
 └── reports/
     └── dashboard_preview.png        # Dashboard screenshots and profiling outputs
 </pre>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📈 Key Insights & Dashboard Highlights
+
+The packaged Tableau workbook (tableau/ev_market_performance.twbx) delivers 5 dedicated analytical worksheets and an executive story:
+
+Sales by Category: Breakdown of market demand across vehicle segments (Sedan, SUV, Hatchback, etc.).
+Top 10 Manufacturers: Filtered ranking of leading EV makers by summed annual sales units.
+Annual Sales Trend: Multi-year trend line showing market expansion and velocity.
+Battery Technology Analysis: Market share distribution across different battery chemistry/technologies.
+Customer Satisfaction: Average customer ratings across vehicle categories (mean rating benchmark ~4.09).
+Interactive Filtering: Cross-filtering enabled by clicking category elements directly on the dashboard.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Project question
 
 How do vehicle category, manufacturer, region, battery technology, price, performance, and model year relate to EV market volume and customer ratings in this dataset?

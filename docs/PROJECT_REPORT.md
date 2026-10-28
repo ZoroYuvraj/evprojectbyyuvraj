@@ -68,9 +68,9 @@ The supplied `ev_market_train.csv` has 200,000 rows and 37 columns; `ev_market_t
 
 ## 9A. Implemented in the packaged workbook
 
-The current packaged workbook connects to the supplied training CSV only and includes four views: recorded annual sales units by category, recorded annual sales units by manufacturer (Top 10 filter), annual sales units by model year, and annual sales units by battery type. The dashboard is titled **EV Market Performance & Insights** and arranges these four views on one screen. The category worksheet has a Category filter; the dashboard category chart is enabled as a filter action. The Tableau Story contains two captioned points: the complete dashboard overview and the annual sales trend.
+The current packaged workbook connects to the supplied training CSV only and includes five views: recorded annual sales units by category, recorded annual sales units by manufacturer (Top 10 filter), annual sales units by model year, annual sales units by battery type, and average customer rating by category (a text table). The dashboard is titled **EV Market Performance & Insights** and arranges these four views on one screen. The category worksheet has a Category filter; the dashboard category chart is enabled as a filter action. The Tableau Story contains two captioned points: the complete dashboard overview and the annual sales trend.
 
-KPI cards, customer-rating analysis, a geographic map, and additional charts from the proposed 8–10 visualization scope have not yet been implemented. A timed performance benchmark and recording are also pending. The workbook's manufacturer filter reduces the view from 200 manufacturer marks to 10; this is a view-size check, not a measured rendering-time benchmark. See [`../reports/PERFORMANCE_NOTES.md`](../reports/PERFORMANCE_NOTES.md).
+KPI cards, a geographic map, and additional charts from the proposed 8–10 visualization scope have not yet been implemented. The customer-rating view uses an AVG calculation; its scale is not confirmed. A timed performance benchmark and recording are also pending. The workbook's manufacturer filter reduces the view from 200 manufacturer marks to 10; this is a view-size check, not a measured rendering-time benchmark. See [`../reports/PERFORMANCE_NOTES.md`](../reports/PERFORMANCE_NOTES.md).
 
 ## 10. Initial profile results
 

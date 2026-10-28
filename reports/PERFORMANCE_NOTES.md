@@ -6,7 +6,7 @@ Date: 2026-10-28
 
 - Connected data source: `ev_market_train.csv` only.
 - Source shape: 200,000 rows and 37 fields, matching the profile report.
-- Worksheets present: Sales by Category; Sales by Manufacturer; Annual Sales Trend; Sales by Battery Type.
+- Worksheets present: Sales by Category; Sales by Manufacturer; Annual Sales Trend; Sales by Battery Type; Customer Rating by Category (text table using AVG(Customer Rating)).
 - Dashboard present: **EV Market Performance & Insights**, with all four views arranged on one screen.
 - Manufacturer worksheet uses a Top 10 filter ranked by `SUM(Annual Sales Units)`; the sheet displays 10 marks instead of 200.
 - Category worksheet has a Category filter control. The dashboard category view is enabled as a filter action for interactive exploration.
@@ -15,11 +15,11 @@ Date: 2026-10-28
 
 ## Performance evidence and limits
 
-The full training source loaded in Tableau and the four-view dashboard rendered. Applying the Top 10 filter reduced manufacturer marks from 200 to 10. No stopwatch, refresh-time benchmark, multi-filter stress test, or second-computer test was performed, so this is qualitative validation only and must not be reported as measured response time.
+The full training source loaded in Tableau and the four-view dashboard rendered. The additional rating worksheet displays average customer rating by category (about 4.09 overall in the profile; scale unconfirmed). Applying the Top 10 filter reduced manufacturer marks from 200 to 10. No stopwatch, refresh-time benchmark, multi-filter stress test, or second-computer test was performed, so this is qualitative validation only and must not be reported as measured response time.
 
 ## Pending before formal submission
 
 - Confirm data provenance and redistribution permission with the mentor before Tableau Public publishing or public GitHub release of the raw CSVs.
 - Capture screenshots and a 5–7 minute screen recording.
-- If the rubric requires additional visualization count or KPIs, add those before calling the project complete. Current workbook has four unique chart types/views and no KPI-card row.
+- If the rubric requires additional visualization count or KPIs, add those before calling the project complete. Current workbook has four dashboard charts plus one category-rating text table, and no KPI-card row.
 - Review filter action behavior on the instructor's Tableau version and display size.

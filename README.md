@@ -16,6 +16,7 @@ Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) 
 
 The workbook is an educational draft. KPI cards, more visualizations, a timed performance benchmark, screenshots, and the 5–7 minute recording are not included yet. Customer rating is shown as an average (about 4.09 in the training file); confirm its scale with the  before describing it as a score out of 5. Do not publish the packaged data publicly until the mentor confirms redistribution is allowed.
 ## EV STRUCTURE
+<pre>
 ├── data/
 │   └── raw/
 │       ├── ev_market_train.csv      # Primary dataset (200,000 rows, 37 columns)
@@ -31,7 +32,7 @@ The workbook is an educational draft. KPI cards, more visualizations, a timed pe
 │   └── ev_market_performance.twbx   # Packaged Tableau workbook
 └── reports/
     └── dashboard_preview.png        # Dashboard screenshots and profiling outputs
-
+</pre>
 ## Project question
 
 How do vehicle category, manufacturer, region, battery technology, price, performance, and model year relate to EV market volume and customer ratings in this dataset?

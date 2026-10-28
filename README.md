@@ -6,6 +6,7 @@ An end-to-end Tableau analytics project built from the supplied EV market train/
 
 **Project author:** Yuvraj Devda  
 **Contact:** [yuvrajdevdaji@gmail.com](mailto:yuvrajdevdaji@gmail.com)
+**Username:** ZoroYuvraj
 
 Unless a file states otherwise, the original project documentation, scripts, and Tableau workbook are © 2026 Yuvraj Devda. No license granting reuse or redistribution is provided. Contact the author for permission before copying or redistributing these project materials. Dataset ownership and redistribution rights are separate; see the data notes below.
 

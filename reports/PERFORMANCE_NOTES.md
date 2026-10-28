@@ -20,6 +20,8 @@ The full training source loaded in Tableau and the four-view dashboard rendered.
 ## Pending before formal submission
 
 - Confirm data provenance and redistribution permission with the mentor before Tableau Public publishing or public GitHub release of the raw CSVs.
-- Capture screenshots and record the required 5–7 minute screen recording (voice can be added later).
-- KPI cards and a geographic map remain absent. Current dashboard has four charts; a fifth worksheet shows a category-rating text table. Add KPI cards/map if the rubric requires them.
+- The dashboard and map screenshots are in `reports/`. The KPI graphic is in `reports/kpi_cards.svg`.
+- Record the required 5–7 minute screen-share walkthrough (voice can be added later).
+- A separate **EV Manufacturing Map** worksheet now maps 10 recognized country marks and sizes marks by summed recorded annual sales units. It is standalone, not included in the main dashboard/story.
+- `reports/kpi_cards.svg` is a static six-metric snapshot graphic; it is not a live Tableau view and does not respond to filters. It is kept separate so the existing chart dashboard remains readable.
 - Review filter action behavior on the instructor's Tableau version and display size.

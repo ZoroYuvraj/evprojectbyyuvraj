@@ -18,7 +18,7 @@ Use this as a speaking outline while recording the project screen. Replace brack
 
 “The dashboard has four views. The category chart compares the recorded annual sales measure across vehicle classes. The manufacturer chart is limited to the top 10 labels by the same measure. The model-year line chart shows how the measure varies across years, and the battery chart compares battery types. Selecting a category in the dashboard can filter the other views. These are patterns in the supplied file; the dataset's source and definitions are unconfirmed.”
 
-Demonstrate the Category filter on the category worksheet and the dashboard category selection action. Clear the selection before moving on. Do not mention KPI cards, a map, or a scatter plot as completed—the current workbook does not contain them.
+Demonstrate the Category filter on the category worksheet and the dashboard category selection action. Clear the selection before moving on. Then open the standalone EV Manufacturing Map worksheet and explain that its 10 country marks are geocoded records from the supplied training data, not independently verified market locations. The KPI card graphic in `reports/kpi_cards.svg` is a static summary asset and is not filter-responsive.
 
 ## 4:30–5:30 — Present findings
 
@@ -33,5 +33,5 @@ Demonstrate the Category filter on the category worksheet and the dashboard cate
 - Replace all bracketed prompts and rehearse once.
 - Keep the dashboard visible at readable zoom and clear filters before recording.
 - Show the project repository and mention where the guide and profile are stored.
-- Mention that KPI cards and a geographic map are not included yet. The customer-rating worksheet and Story scene are included.
+- Show the KPI card SVG separately if needed; label it as a static summary rather than a live Tableau view. The map is a standalone worksheet.
 - Do not expose login credentials, private account details, or unpublished tokens in the recording.

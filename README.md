@@ -1,95 +1,45 @@
 # Electric Vehicle Market Performance & Insights
 
-An end-to-end Tableau analytics project built from the supplied EV market train/test CSV files. The repository contains the source data, a repeatable data profile script, the packaged Tableau workbook, a step-by-step guide, report, and demo notes.
+An end-to-end Tableau analysis project using the supplied EV market train and test CSV files.
 
-## Project ownership and contact
+## Project owner
 
-**Project author:** Yuvraj Devda  
+**Author:** Yuvraj Devda (`ZoroYuvraj`)  
 **Contact:** [yuvrajdevdaji@gmail.com](mailto:yuvrajdevdaji@gmail.com)
-**Username:** ZoroYuvraj
 
-Unless a file states otherwise, the original project documentation, scripts, and Tableau workbook are © 2026 Yuvraj Devda. No license granting reuse or redistribution is provided. Contact the author for permission before copying or redistributing these project materials. Dataset ownership and redistribution rights are separate; see the data notes below.
+Unless otherwise stated, original project documentation, scripts, and Tableau workbook are © 2026 Yuvraj Devda. No license granting reuse or redistribution is provided. Dataset rights are separate; see the data notes below.
 
-## Current workbook deliverable
+## Workbook
 
-Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. It is a packaged workbook with the training CSV included. It contains five worksheets—sales by category, sales by manufacturer, annual sales trend, sales by battery type, and average customer rating by category—plus the **EV Market Performance & Insights** dashboard. The manufacturer sheet is limited to the top 10 labels by summed annual sales units. A category filter is available on its worksheet, and the dashboard category chart can be used as a filter action. The Tableau Story has six captioned scenes: overview, annual sales trend, category, top manufacturers, battery mix, and customer ratings.
+Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. The packaged workbook contains the training CSV, five analysis worksheets (category sales, manufacturer sales, annual sales trend, battery type sales, and customer ratings), an **EV Manufacturing Map** worksheet, the four-view **EV Market Performance & Insights** dashboard, and a six-scene Tableau Story. The manufacturer worksheet is filtered to the top 10 labels by summed recorded annual sales units. Category selection can filter the dashboard views.
 
-The workbook is an educational draft. KPI cards, more visualizations, a timed performance benchmark, screenshots, and the 5–7 minute recording are not included yet. Customer rating is shown as an average (about 4.09 in the training file); confirm its scale with the  before describing it as a score out of 5. Do not publish the packaged data publicly until the mentor confirms redistribution is allowed.
-## EV STRUCTURE
-<pre>
-├── data/
-│   └── raw/
-│       ├── ev_market_train.csv      # Primary dataset (200,000 rows, 37 columns)
-│       └── ev_market_test.csv       # Validation dataset (100,000 rows, 37 columns)
-├── docs/
-│   ├── DATA_DICTIONARY.md           # Column definitions, types & constraints
-│   ├── PROJECT_REPORT.md            # Deep-dive scope, methodology & findings
-│   ├── TABLEAU_BUILD_GUIDE.md       # Step-by-step chart creation & filter setup
-│   └── DEMO_SCRIPT.md               # 5–7 min walkthrough video recording outline
-├── scripts/
-│   └── profile_data.py              # Repeatable Python audit script (Zero dependencies)
-├── tableau/
-│   └── ev_market_performance.twbx   # Packaged Tableau workbook
-└── reports/
-    └── dashboard_preview.png        # Dashboard screenshots and profiling outputs
-</pre>
+The map has 10 country marks sized by the dataset's recorded annual sales measure. It is a standalone sheet, not part of the dashboard or Story. The six-metric KPI graphic at [`reports/kpi_cards.svg`](reports/kpi_cards.svg) is a static summary image, not an interactive Tableau view. Its reported counts and averages are based on the supplied training file.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📈 Key Insights & Dashboard Highlights
-
-The packaged Tableau workbook (tableau/ev_market_performance.twbx) delivers 5 dedicated analytical worksheets and an executive story:
-
-Sales by Category: Breakdown of market demand across vehicle segments (Sedan, SUV, Hatchback, etc.).
-Top 10 Manufacturers: Filtered ranking of leading EV makers by summed annual sales units.
-Annual Sales Trend: Multi-year trend line showing market expansion and velocity.
-Battery Technology Analysis: Market share distribution across different battery chemistry/technologies.
-Customer Satisfaction: Average customer ratings across vehicle categories (mean rating benchmark ~4.09).
-Interactive Filtering: Cross-filtering enabled by clicking category elements directly on the dashboard.
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Screenshots are available in [`reports/dashboard_updated.png`](reports/dashboard_updated.png) and [`reports/manufacturing_sales_map.png`](reports/manufacturing_sales_map.png). The walkthrough script is in [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md).
 
 ## Project question
 
-How do vehicle category, manufacturer, region, battery technology, price, performance, and model year relate to EV market volume and customer ratings in this dataset?
+How do vehicle category, manufacturer, region, battery technology, price, performance, and model year relate to recorded EV market volume and customer ratings in this dataset?
 
-## Data included
+## Data
 
-| File | Records | Fields | Intended use |
+| File | Rows | Columns | Use |
 |---|---:|---:|---|
-| `data/raw/ev_market_train.csv` | 200,000 | 37 | Primary analysis and Tableau workbook |
-| `data/raw/ev_market_test.csv` | 100,000 | 37 | Secondary comparison / validation; keep separate from the primary dashboard unless needed |
+| `data/raw/ev_market_train.csv` | 200,000 | 37 | Primary Tableau analysis |
+| `data/raw/ev_market_test.csv` | 100,000 | 37 | Separate validation/reference file |
 
-The train and test files share the same schema. Field definitions are in [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md). The files were supplied by the project owner. No original publisher, collection method, or license was included, so treat the values as an educational/simulated dataset unless your mentor confirms provenance. Do not describe them as verified real-world sales or customer survey results.
+The files were supplied by the project owner without a publisher, collection method, or license. Treat the values as educational/simulated until their provenance is confirmed. Do not present them as independently verified real-world sales or customer survey results. `annual_sales_units` is the measure as supplied; its exact units and time window are unconfirmed. Train and test rows should not be combined for headline totals.
 
-## Start here
+## Repository contents
 
-1. Open the packaged workbook linked above.
-2. Read [`docs/PROJECT_REPORT.md`](docs/PROJECT_REPORT.md) for scope, methodology, dataset findings, and limitations.
-3. Follow [`docs/TABLEAU_BUILD_GUIDE.md`](docs/TABLEAU_BUILD_GUIDE.md) for field definitions, chart setup, filters, and further extensions.
-4. Run `python scripts/profile_data.py` to reproduce the row counts, missing values, duplicate IDs, and summary statistics. The script uses only Python's standard library.
-5. Use [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) as the outline for the required 5–7 minute recording; replace bracketed prompts and capture the final workbook screen.
+- `data/raw/` — supplied train and test files
+- `docs/` — data dictionary, project report, Tableau build guide, and demo script
+- `scripts/profile_data.py` — repeatable data profile utility
+- `tableau/` — editable and packaged Tableau workbooks
+- `reports/` — KPI graphic, screenshots, profile output, and QA notes
 
-## Future improvements
+## Remaining work
 
-Add KPI cards for distinct vehicles, manufacturers, models, and average range; expand to geographic analysis and additional comparison charts; and add model-year, region, manufacturer, and battery filters. Record a timed benchmark on the target computer and check the workbook after packaging.
+The KPI graphic is static and should be rebuilt as native Tableau text sheets if interactive, filter-responsive cards are required. The map can be added to a dashboard or Story if required by the rubric. A timed performance benchmark and the student's 5–7 minute screen-share recording are still pending; voice-over can be added afterward.
 
-## Repository layout
-
-```text
-data/raw/       Supplied train and test CSV files
-docs/           Project report, field dictionary, Tableau workflow
-scripts/        Repeatable data profiling utility
-tableau/        Tableau workbook deliverable (to be saved from Tableau)
-reports/        Profile output and final screenshots/report assets
-```
-
-## Important interpretation rules
-
-- `annual_sales_units` is a measure in the supplied files. It is not a verified count of units sold unless the dataset owner confirms its definition.
-- A row represents a vehicle record/model observation (confirm with the data owner); it must not automatically be interpreted as one vehicle registration.
-- Do not combine train and test rows in totals. Analyze them separately unless there is a documented reason to pool them.
-- The screenshots supplied with the brief mention 39 columns and some example dashboard figures. The actual CSV files contain 37 columns; all metrics and descriptions in the final submission must be recalculated from these CSVs.
-
-## Suggested project completion status
-
-The local packaged workbook and project materials are ready for review. Publishing and public redistribution still require mentor confirmation; the 5–7 minute walkthrough must be recorded by the student.
+Customer rating averages about 4.09 in the training file; confirm the scale before describing it as a score out of 5. Confirm data provenance and redistribution rights with the mentor before public Tableau publishing or redistributing the supplied CSVs.

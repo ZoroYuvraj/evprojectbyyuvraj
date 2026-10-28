@@ -1,0 +1,622 @@
+{
+  "train": {
+    "file": "ev_market_train.csv",
+    "rows": 200000,
+    "columns": 37,
+    "fields": [
+      "vehicle_id",
+      "model_name",
+      "manufacturer",
+      "model_year",
+      "manufacturing_country",
+      "market_region",
+      "category",
+      "battery_capacity_kwh",
+      "battery_type",
+      "battery_cycle_life",
+      "battery_degradation_pct_5yr",
+      "range_km",
+      "efficiency_wh_per_km",
+      "motor_power_kw",
+      "torque_nm",
+      "num_motors",
+      "drivetrain",
+      "top_speed_kmph",
+      "acceleration_0_100_sec",
+      "max_dc_charging_kw",
+      "charging_dc_fast_time_min",
+      "charging_ac_time_hr",
+      "num_charging_ports",
+      "num_seats",
+      "weight_kg",
+      "cargo_capacity_liters",
+      "price_usd",
+      "insurance_cost_usd_yearly",
+      "warranty_years",
+      "resale_value_pct_3yr",
+      "safety_rating_stars",
+      "autonomous_level",
+      "infotainment_screen_inch",
+      "co2_saved_tons_per_year",
+      "annual_sales_units",
+      "customer_rating",
+      "recommended_use_case"
+    ],
+    "blank_cells_by_field": {
+      "infotainment_screen_inch": 3102,
+      "annual_sales_units": 2028,
+      "resale_value_pct_3yr": 6103,
+      "battery_cycle_life": 3786,
+      "customer_rating": 3977
+    },
+    "duplicate_vehicle_id_rows": 1,
+    "distinct_vehicle_ids": 199999,
+    "distinct_manufacturers": 200,
+    "distinct_model_names": 17980,
+    "numeric_summary": {
+      "model_year": {
+        "min": 2018.0,
+        "max": 2026.0,
+        "mean": 2021.9974
+      },
+      "battery_capacity_kwh": {
+        "min": 1.5,
+        "max": 409.99,
+        "mean": 78.2419
+      },
+      "range_km": {
+        "min": 55.0,
+        "max": 660.0,
+        "mean": 324.5367
+      },
+      "efficiency_wh_per_km": {
+        "min": 9.89,
+        "max": 2261.41,
+        "mean": 250.388
+      },
+      "price_usd": {
+        "min": 900.21,
+        "max": 409971.71,
+        "mean": 64920.5327
+      },
+      "annual_sales_units": {
+        "min": 9.0,
+        "max": 1066612.0,
+        "mean": 7832.9459
+      },
+      "customer_rating": {
+        "min": 1.52,
+        "max": 5.0,
+        "mean": 4.0888
+      }
+    },
+    "top_sales_groups": {
+      "manufacturer": [
+        {
+          "label": "AmpereWorks",
+          "annual_sales_units": 9453209.0
+        },
+        {
+          "label": "CircuitWorks",
+          "annual_sales_units": 8919177.0
+        },
+        {
+          "label": "MomentumMobility",
+          "annual_sales_units": 8778501.0
+        },
+        {
+          "label": "SurgeDynamics",
+          "annual_sales_units": 8763611.0
+        },
+        {
+          "label": "TerraMotors",
+          "annual_sales_units": 8746119.0
+        },
+        {
+          "label": "AmpereDynamics",
+          "annual_sales_units": 8721216.0
+        },
+        {
+          "label": "VoltMobility",
+          "annual_sales_units": 8718601.0
+        },
+        {
+          "label": "CurrentMotors",
+          "annual_sales_units": 8711573.0
+        },
+        {
+          "label": "WattWheels",
+          "annual_sales_units": 8689635.0
+        },
+        {
+          "label": "CircuitRides",
+          "annual_sales_units": 8658233.0
+        }
+      ],
+      "category": [
+        {
+          "label": "Two-Wheeler Scooter",
+          "annual_sales_units": 174615722.0
+        },
+        {
+          "label": "Hatchback",
+          "annual_sales_units": 154913963.0
+        },
+        {
+          "label": "Compact SUV",
+          "annual_sales_units": 153423011.0
+        },
+        {
+          "label": "Sedan",
+          "annual_sales_units": 153351587.0
+        },
+        {
+          "label": "Three-Wheeler",
+          "annual_sales_units": 133134035.0
+        },
+        {
+          "label": "Crossover",
+          "annual_sales_units": 132304173.0
+        },
+        {
+          "label": "Micro City Car",
+          "annual_sales_units": 115413538.0
+        },
+        {
+          "label": "Luxury Sedan",
+          "annual_sales_units": 115272864.0
+        },
+        {
+          "label": "Full-size SUV",
+          "annual_sales_units": 114667715.0
+        },
+        {
+          "label": "Van / MPV",
+          "annual_sales_units": 97658601.0
+        }
+      ],
+      "model_year": [
+        {
+          "label": "2019",
+          "annual_sales_units": 176980064.0
+        },
+        {
+          "label": "2024",
+          "annual_sales_units": 176888761.0
+        },
+        {
+          "label": "2025",
+          "annual_sales_units": 173171808.0
+        },
+        {
+          "label": "2023",
+          "annual_sales_units": 172419808.0
+        },
+        {
+          "label": "2018",
+          "annual_sales_units": 172072584.0
+        },
+        {
+          "label": "2020",
+          "annual_sales_units": 171797586.0
+        },
+        {
+          "label": "2022",
+          "annual_sales_units": 170782068.0
+        },
+        {
+          "label": "2026",
+          "annual_sales_units": 170776243.0
+        },
+        {
+          "label": "2021",
+          "annual_sales_units": 165815039.0
+        }
+      ],
+      "market_region": [
+        {
+          "label": "South Asia",
+          "annual_sales_units": 223970101.0
+        },
+        {
+          "label": "Latin America",
+          "annual_sales_units": 223421029.0
+        },
+        {
+          "label": "North America",
+          "annual_sales_units": 222762317.0
+        },
+        {
+          "label": "Middle East",
+          "annual_sales_units": 221241595.0
+        },
+        {
+          "label": "Asia Pacific",
+          "annual_sales_units": 221059464.0
+        },
+        {
+          "label": "Africa",
+          "annual_sales_units": 220706216.0
+        },
+        {
+          "label": "Europe",
+          "annual_sales_units": 217543239.0
+        }
+      ],
+      "manufacturing_country": [
+        {
+          "label": "India",
+          "annual_sales_units": 159239271.0
+        },
+        {
+          "label": "China",
+          "annual_sales_units": 158514269.0
+        },
+        {
+          "label": "Vietnam",
+          "annual_sales_units": 157312671.0
+        },
+        {
+          "label": "UK",
+          "annual_sales_units": 156661546.0
+        },
+        {
+          "label": "USA",
+          "annual_sales_units": 155268324.0
+        },
+        {
+          "label": "South Korea",
+          "annual_sales_units": 155256471.0
+        },
+        {
+          "label": "France",
+          "annual_sales_units": 154989316.0
+        },
+        {
+          "label": "Germany",
+          "annual_sales_units": 153722278.0
+        },
+        {
+          "label": "Sweden",
+          "annual_sales_units": 151407797.0
+        },
+        {
+          "label": "Japan",
+          "annual_sales_units": 148332018.0
+        }
+      ],
+      "battery_type": [
+        {
+          "label": "NMC",
+          "annual_sales_units": 524128656.0
+        },
+        {
+          "label": "LFP",
+          "annual_sales_units": 496050117.0
+        },
+        {
+          "label": "NCA",
+          "annual_sales_units": 267213157.0
+        },
+        {
+          "label": "Sodium-Ion",
+          "annual_sales_units": 153272251.0
+        },
+        {
+          "label": "Solid-State",
+          "annual_sales_units": 110039780.0
+        }
+      ]
+    }
+  },
+  "test": {
+    "file": "ev_market_test.csv",
+    "rows": 100000,
+    "columns": 37,
+    "fields": [
+      "vehicle_id",
+      "model_name",
+      "manufacturer",
+      "model_year",
+      "manufacturing_country",
+      "market_region",
+      "category",
+      "battery_capacity_kwh",
+      "battery_type",
+      "battery_cycle_life",
+      "battery_degradation_pct_5yr",
+      "range_km",
+      "efficiency_wh_per_km",
+      "motor_power_kw",
+      "torque_nm",
+      "num_motors",
+      "drivetrain",
+      "top_speed_kmph",
+      "acceleration_0_100_sec",
+      "max_dc_charging_kw",
+      "charging_dc_fast_time_min",
+      "charging_ac_time_hr",
+      "num_charging_ports",
+      "num_seats",
+      "weight_kg",
+      "cargo_capacity_liters",
+      "price_usd",
+      "insurance_cost_usd_yearly",
+      "warranty_years",
+      "resale_value_pct_3yr",
+      "safety_rating_stars",
+      "autonomous_level",
+      "infotainment_screen_inch",
+      "co2_saved_tons_per_year",
+      "annual_sales_units",
+      "customer_rating",
+      "recommended_use_case"
+    ],
+    "blank_cells_by_field": {
+      "battery_cycle_life": 2028,
+      "annual_sales_units": 989,
+      "infotainment_screen_inch": 1506,
+      "resale_value_pct_3yr": 3057,
+      "customer_rating": 1931
+    },
+    "duplicate_vehicle_id_rows": 0,
+    "distinct_vehicle_ids": 100000,
+    "distinct_manufacturers": 200,
+    "distinct_model_names": 17919,
+    "numeric_summary": {
+      "model_year": {
+        "min": 2018.0,
+        "max": 2026.0,
+        "mean": 2022.0044
+      },
+      "battery_capacity_kwh": {
+        "min": 1.5,
+        "max": 410.0,
+        "mean": 78.2335
+      },
+      "range_km": {
+        "min": 55.0,
+        "max": 659.9,
+        "mean": 324.307
+      },
+      "efficiency_wh_per_km": {
+        "min": 9.98,
+        "max": 2242.84,
+        "mean": 250.5746
+      },
+      "price_usd": {
+        "min": 900.04,
+        "max": 409995.49,
+        "mean": 65010.4616
+      },
+      "annual_sales_units": {
+        "min": 10.0,
+        "max": 772442.0,
+        "mean": 7803.2554
+      },
+      "customer_rating": {
+        "min": 1.75,
+        "max": 5.0,
+        "mean": 4.0847
+      }
+    },
+    "top_sales_groups": {
+      "manufacturer": [
+        {
+          "label": "SurgeWorks",
+          "annual_sales_units": 4883639.0
+        },
+        {
+          "label": "CurrentMobility",
+          "annual_sales_units": 4779221.0
+        },
+        {
+          "label": "ElektraMobility",
+          "annual_sales_units": 4753865.0
+        },
+        {
+          "label": "VelocityMobility",
+          "annual_sales_units": 4682435.0
+        },
+        {
+          "label": "WattDynamics",
+          "annual_sales_units": 4649510.0
+        },
+        {
+          "label": "ZapWheels",
+          "annual_sales_units": 4627176.0
+        },
+        {
+          "label": "KineticAutomotive",
+          "annual_sales_units": 4625247.0
+        },
+        {
+          "label": "IonMotors",
+          "annual_sales_units": 4616237.0
+        },
+        {
+          "label": "WattRides",
+          "annual_sales_units": 4542425.0
+        },
+        {
+          "label": "ZapWorks",
+          "annual_sales_units": 4532114.0
+        }
+      ],
+      "category": [
+        {
+          "label": "Two-Wheeler Scooter",
+          "annual_sales_units": 85031983.0
+        },
+        {
+          "label": "Sedan",
+          "annual_sales_units": 78308119.0
+        },
+        {
+          "label": "Compact SUV",
+          "annual_sales_units": 76124966.0
+        },
+        {
+          "label": "Hatchback",
+          "annual_sales_units": 76119096.0
+        },
+        {
+          "label": "Three-Wheeler",
+          "annual_sales_units": 67093551.0
+        },
+        {
+          "label": "Crossover",
+          "annual_sales_units": 64775185.0
+        },
+        {
+          "label": "Luxury Sedan",
+          "annual_sales_units": 58829723.0
+        },
+        {
+          "label": "Micro City Car",
+          "annual_sales_units": 57878485.0
+        },
+        {
+          "label": "Full-size SUV",
+          "annual_sales_units": 56996912.0
+        },
+        {
+          "label": "Luxury SUV",
+          "annual_sales_units": 47557390.0
+        }
+      ],
+      "model_year": [
+        {
+          "label": "2021",
+          "annual_sales_units": 88088210.0
+        },
+        {
+          "label": "2023",
+          "annual_sales_units": 87648967.0
+        },
+        {
+          "label": "2019",
+          "annual_sales_units": 87200209.0
+        },
+        {
+          "label": "2022",
+          "annual_sales_units": 87023272.0
+        },
+        {
+          "label": "2024",
+          "annual_sales_units": 86558046.0
+        },
+        {
+          "label": "2026",
+          "annual_sales_units": 84919328.0
+        },
+        {
+          "label": "2018",
+          "annual_sales_units": 84694932.0
+        },
+        {
+          "label": "2020",
+          "annual_sales_units": 83921609.0
+        },
+        {
+          "label": "2025",
+          "annual_sales_units": 82553551.0
+        }
+      ],
+      "market_region": [
+        {
+          "label": "Europe",
+          "annual_sales_units": 112527370.0
+        },
+        {
+          "label": "South Asia",
+          "annual_sales_units": 111291461.0
+        },
+        {
+          "label": "Asia Pacific",
+          "annual_sales_units": 111101480.0
+        },
+        {
+          "label": "Latin America",
+          "annual_sales_units": 111006574.0
+        },
+        {
+          "label": "North America",
+          "annual_sales_units": 109887002.0
+        },
+        {
+          "label": "Middle East",
+          "annual_sales_units": 108516894.0
+        },
+        {
+          "label": "Africa",
+          "annual_sales_units": 108277343.0
+        }
+      ],
+      "manufacturing_country": [
+        {
+          "label": "China",
+          "annual_sales_units": 78870003.0
+        },
+        {
+          "label": "Japan",
+          "annual_sales_units": 78337960.0
+        },
+        {
+          "label": "Vietnam",
+          "annual_sales_units": 78026648.0
+        },
+        {
+          "label": "UK",
+          "annual_sales_units": 77564380.0
+        },
+        {
+          "label": "USA",
+          "annual_sales_units": 77390215.0
+        },
+        {
+          "label": "South Korea",
+          "annual_sales_units": 77205132.0
+        },
+        {
+          "label": "Germany",
+          "annual_sales_units": 76634986.0
+        },
+        {
+          "label": "Sweden",
+          "annual_sales_units": 76615882.0
+        },
+        {
+          "label": "India",
+          "annual_sales_units": 76393650.0
+        },
+        {
+          "label": "France",
+          "annual_sales_units": 75569268.0
+        }
+      ],
+      "battery_type": [
+        {
+          "label": "NMC",
+          "annual_sales_units": 259161838.0
+        },
+        {
+          "label": "LFP",
+          "annual_sales_units": 248470045.0
+        },
+        {
+          "label": "NCA",
+          "annual_sales_units": 133650787.0
+        },
+        {
+          "label": "Sodium-Ion",
+          "annual_sales_units": 75816003.0
+        },
+        {
+          "label": "Solid-State",
+          "annual_sales_units": 55509451.0
+        }
+      ]
+    }
+  }
+}

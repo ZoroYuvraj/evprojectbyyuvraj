@@ -1,0 +1,12 @@
+# Tableau temporary and lock files
+*.twb~
+*.twbx~
+*.lock
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Keep the supplied CSV data tracked unless institutional sharing rules require otherwise.

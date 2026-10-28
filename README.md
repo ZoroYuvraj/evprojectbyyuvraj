@@ -1,4 +1,4 @@
-# Electric Vehicle Market Performance & Insights
+﻿# Electric Vehicle Market Performance & Insights
 
 A Tableau data analytics project exploring trends and segment differences in the supplied electric vehicle (EV) market dataset.
 
@@ -27,6 +27,8 @@ This project uses Tableau to explore how EV category, manufacturer, model year, 
 The analysis is descriptive. It does not establish causation, forecast demand, or verify the dataset's real-world accuracy.
 
 ## Workbook and deliverables
+
+Tableau Public: [View published visualizations](https://public.tableau.com/app/profile/yuvraj.devda/vizzes)
 
 Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. The packaged workbook includes the training CSV.
 
@@ -106,9 +108,10 @@ reports/        KPI graphic, screenshots, profile output, QA notes
 - The KPI cards are a static graphic. Build native Tableau KPI sheets if the rubric requires filter-responsive cards.
 - The map is standalone; add it to a dashboard or Story only if the project requirements call for it.
 - No timed rendering benchmark or multi-filter stress test has been recorded.
-- The required 5–7 minute screen-share recording remains to be made; narration can be added afterward.
+- The required 5â€“7 minute screen-share recording remains to be made; narration can be added afterward.
 - Confirm the dataset's provenance, rating scale, sales measure definition, and redistribution rights with the mentor before presenting or publicly redistributing the data.
 
 ## Ownership and data rights
 
-Original project documentation, scripts, and Tableau workbook are © 2026 Yuvraj Devda unless otherwise stated. No license granting reuse or redistribution is provided. The supplied dataset may have separate ownership and redistribution terms; confirm permission before republishing the CSVs or publishing the packaged workbook publicly.
+Original project documentation, scripts, and Tableau workbook are Â© 2026 Yuvraj Devda unless otherwise stated. No license granting reuse or redistribution is provided. The supplied dataset may have separate ownership and redistribution terms; confirm permission before republishing the CSVs or publishing the packaged workbook publicly.
+

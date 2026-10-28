@@ -26,12 +26,12 @@ Demonstrate the Category filter on the category worksheet and the dashboard cate
 
 ## 5:30–6:15 — Show the story and close
 
-“The Tableau Story begins with the four-view market overview and then focuses on the annual sales trend. The main limitation is missing data provenance and field definitions. With a verified source and definitions, this analysis could be refreshed and compared with authoritative market data. Thank you.”
+“The Tableau Story has six scenes: the dashboard overview, annual sales trend, category comparison, top manufacturers, battery mix, and average ratings by category. The main limitation is missing data provenance and field definitions. With a verified source and definitions, this analysis could be refreshed and compared with authoritative market data. Thank you.”
 
 ## Before recording
 
 - Replace all bracketed prompts and rehearse once.
 - Keep the dashboard visible at readable zoom and clear filters before recording.
 - Show the project repository and mention where the guide and profile are stored.
-- Mention that additional KPI cards and geographic/customer-rating analysis are future improvements, not included in this workbook.
+- Mention that KPI cards and a geographic map are not included yet. The customer-rating worksheet and Story scene are included.
 - Do not expose login credentials, private account details, or unpublished tokens in the recording.

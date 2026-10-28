@@ -10,8 +10,8 @@ Date: 2026-10-28
 - Dashboard present: **EV Market Performance & Insights**, with all four views arranged on one screen.
 - Manufacturer worksheet uses a Top 10 filter ranked by `SUM(Annual Sales Units)`; the sheet displays 10 marks instead of 200.
 - Category worksheet has a Category filter control. The dashboard category view is enabled as a filter action for interactive exploration.
-- Tableau Story has two points: dashboard overview and annual-sales trend, each with explanatory caption text.
-- Packaged workbook opened in Tableau Public after packaging and was saved after these updates.
+- Tableau Story has six captioned points: dashboard overview, annual-sales trend, category comparison, top manufacturers, battery mix, and customer ratings.
+- Updated packaged workbook was saved from Tableau Public after adding the six-scene story. Its embedded TWB was extracted to refresh the editable workbook file.
 
 ## Performance evidence and limits
 
@@ -20,6 +20,6 @@ The full training source loaded in Tableau and the four-view dashboard rendered.
 ## Pending before formal submission
 
 - Confirm data provenance and redistribution permission with the mentor before Tableau Public publishing or public GitHub release of the raw CSVs.
-- Capture screenshots and a 5–7 minute screen recording.
-- If the rubric requires additional visualization count or KPIs, add those before calling the project complete. Current workbook has four dashboard charts plus one category-rating text table, and no KPI-card row.
+- Capture screenshots and record the required 5–7 minute screen recording (voice can be added later).
+- KPI cards and a geographic map remain absent. Current dashboard has four charts; a fifth worksheet shows a category-rating text table. Add KPI cards/map if the rubric requires them.
 - Review filter action behavior on the instructor's Tableau version and display size.

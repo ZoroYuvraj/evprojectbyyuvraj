@@ -16,6 +16,11 @@ Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) 
 The map has 10 country marks sized by the dataset's recorded annual sales measure. It is a standalone sheet, not part of the dashboard or Story. The six-metric KPI graphic at [`reports/kpi_cards.svg`](reports/kpi_cards.svg) is a static summary image, not an interactive Tableau view. Its reported counts and averages are based on the supplied training file.
 
 Screenshots are available in [`reports/dashboard_updated.png`](reports/dashboard_updated.png) and [`reports/manufacturing_sales_map.png`](reports/manufacturing_sales_map.png). The walkthrough script is in [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md).
+## Important interpretation rules
+annual_sales_units is a measure in the supplied files. It is not a verified count of units sold unless the dataset owner confirms its definition.
+A row represents a vehicle record/model observation (confirm with the data owner); it must not automatically be interpreted as one vehicle registration.
+Do not combine train and test rows in totals. Analyze them separately unless there is a documented reason to pool them.
+The screenshots supplied with the brief mention 39 columns and some example dashboard figures. The actual CSV files contain 37 columns; all metrics and descriptions in the final submission must be recalculated from these CSVs.
 
 ## Project question
 

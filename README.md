@@ -30,6 +30,8 @@ The analysis is descriptive. It does not establish causation, forecast demand, o
 
 Tableau Public: [View published visualizations](https://public.tableau.com/app/profile/yuvraj.devda/vizzes)
 
+Tableau workbook: [Download the packaged workbook](tableau/ev_market_performance.twbx)
+
 Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. The packaged workbook includes the training CSV.
 
 | Workbook item | Contents |

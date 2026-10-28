@@ -11,6 +11,7 @@ A Tableau data analytics project exploring trends and segment differences in the
 
 - [Project overview](#project-overview)
 - [Workbook and deliverables](#workbook-and-deliverables)
+- [Web experience](#web-experience)
 - [Dataset](#dataset)
 - [Methodology and interpretation](#methodology-and-interpretation)
 - [Repository structure](#repository-structure)
@@ -33,6 +34,17 @@ Tableau Public: [View published visualizations](https://public.tableau.com/app/p
 Tableau workbook: [Download the packaged workbook](tableau/ev_market_performance.twbx)
 
 Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. The packaged workbook includes the training CSV.
+
+### Web experience
+
+The Flask site embeds the published Tableau dashboard and Story. To run it locally, install Python, then run:
+
+```powershell
+python -m pip install -r web/requirements.txt
+python web/app.py
+```
+
+Open `http://127.0.0.1:5000` in a browser. Tableau Public must be reachable for the interactive views to load.
 
 | Workbook item | Contents |
 |---|---|
@@ -94,6 +106,7 @@ docs/           Project report, data dictionary, Tableau guide, demo script
 scripts/        Repeatable data profiling utility
 tableau/        Editable (.twb) and packaged (.twbx) Tableau workbooks
 reports/        KPI graphic, screenshots, profile output, QA notes
+web/            Flask site and responsive Tableau dashboard/story embeds
 ```
 
 ## Getting started

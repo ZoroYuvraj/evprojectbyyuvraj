@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0b0d">
+    <meta name="description" content="Explore electric vehicle market trends through an interactive Tableau dashboard and story.">
+    <title>EV Insights — Market Performance</title>
+    <link rel="preconnect" href="https://public.tableau.com">
+    <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="EV Insights home">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span>EV<span class="brand-light">Insights</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#story">Story</a>
+      </nav>
+      <a class="button button-small button-outline header-cta" href="#dashboard">Explore dashboard <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ELECTRIC VEHICLE MARKET · TABLEAU PROJECT</p>
+          <h1>See where the<br>EV market is <em>going.</em></h1>
+          <p class="hero-text">A closer look at recorded sales, vehicle categories, manufacturers, and battery technology—brought together in an interactive dashboard and story.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#dashboard">Explore the dashboard <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#story">Follow the story <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note"><span class="status-dot"></span> Interactive Tableau Public visualizations</div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-topline"><span>EV MARKET PERFORMANCE</span><span>01 / OVERVIEW</span></div>
+          <a class="preview-link" href="#dashboard" aria-label="Jump to interactive EV market dashboard">
+            <img src="{{ url_for('media', filename='dashboard_updated.png') }}" alt="Preview of the EV Market Performance Tableau dashboard">
+          </a>
+          <div class="visual-caption"><span>Explore the data</span><span class="caption-arrow" aria-hidden="true">↗</span></div>
+          <div class="visual-orbit" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Dashboard topics">
+        <div class="ticker-track"><span>MARKET MOMENTUM</span><b>✳</b><span>BATTERY TECHNOLOGY</span><b>✳</b><span>VEHICLE CATEGORIES</span><b>✳</b><span>MANUFACTURER MIX</span><b>✳</b><span>MARKET MOMENTUM</span><b>✳</b><span>BATTERY TECHNOLOGY</span><b>✳</b></div>
+      </section>
+
+      <section class="about section-wrap" id="about">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE PROJECT</p>
+          <h2>From raw numbers<br>to <em>clearer signals.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>This project explores the supplied electric vehicle dataset through interactive Tableau views. Compare the recorded annual-sales measure across categories, manufacturers, model years, and battery types.</p>
+          <p class="muted">The analysis is descriptive. Dataset sales units, reporting period, and rating scale have not been independently verified.</p>
+          <a class="text-link" href="{{ tableau_profile_url }}" target="_blank" rel="noopener noreferrer">View all published visualizations <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="signals section-wrap" aria-label="What you can explore">
+        <article class="signal-card"><span class="card-index">01</span><div class="signal-icon" aria-hidden="true">↗</div><h3>Sales trends</h3><p>Follow changes in the recorded annual-sales measure across model years.</p></article>
+        <article class="signal-card"><span class="card-index">02</span><div class="signal-icon" aria-hidden="true">◈</div><h3>Vehicle mix</h3><p>Compare categories and battery types across the supplied dataset.</p></article>
+        <article class="signal-card"><span class="card-index">03</span><div class="signal-icon" aria-hidden="true">◎</div><h3>Market footprint</h3><p>Explore manufacturers and the separate country-level map view.</p></article>
+      </section>
+
+      <section class="viz-section section-wrap" id="dashboard">
+        <div class="viz-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> INTERACTIVE ANALYSIS</p><h2>Explore the <em>visuals.</em></h2></div>
+          <a class="text-link desktop-link" href="{{ tableau_profile_url }}" target="_blank" rel="noopener noreferrer">Open on Tableau Public <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="viz-shell">
+          <div class="viz-toolbar">
+            <div class="viz-tabs" role="group" aria-label="Choose a visualization">
+              <button class="viz-tab is-active" type="button" data-view="dashboard" aria-pressed="true">Dashboard</button>
+              <button class="viz-tab" type="button" data-view="story" aria-pressed="false">Story</button>
+            </div>
+            <span class="viz-live"><span class="status-dot"></span> TABLEAU PUBLIC</span>
+          </div>
+          <div class="viz-frame" id="dashboard-frame">
+            <iframe title="EV Market Performance interactive Tableau dashboard" src="{{ dashboard_url }}" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="viz-frame is-hidden" id="story-frame" aria-hidden="true">
+            <iframe title="EV Market Performance Tableau story" data-src="{{ story_url }}" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <div class="viz-footer"><span>Use the Tableau controls inside the view to explore.</span><a href="{{ tableau_profile_url }}" target="_blank" rel="noopener noreferrer">Open the viz in a new tab ↗</a></div>
+        </div>
+        <p class="viz-disclaimer">Figures describe the supplied dataset and are not independently verified market statistics.</p>
+      </section>
+
+      <section class="story-band" id="story">
+        <div class="section-wrap story-inner">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> A GUIDED WALKTHROUGH</p><h2>Explore the<br><em>story behind</em><br>the numbers.</h2></div>
+          <div class="story-copy"><p>Move through six scenes covering the dashboard overview, annual trend, vehicle categories, manufacturers, battery mix, and customer ratings.</p><a class="button button-primary" href="#dashboard" data-open-story>Open the Tableau story <span aria-hidden="true">→</span></a></div>
+          <span class="story-index" aria-hidden="true">06</span>
+        </div>
+      </section>
+
+      <footer class="site-footer section-wrap">
+        <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">E</span><span>EV<span class="brand-light">Insights</span></span></a>
+        <p>Electric Vehicle Market Performance &amp; Insights</p>
+        <a class="text-link" href="{{ tableau_profile_url }}" target="_blank" rel="noopener noreferrer">Tableau Public <span aria-hidden="true">↗</span></a>
+      </footer>
+    </main>
+    <script src="{{ url_for('static', filename='site.js') }}" defer></script>
+  </body>
+</html>

@@ -13,7 +13,7 @@ Unless a file states otherwise, the original project documentation, scripts, and
 
 Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. It is a packaged workbook with the training CSV included. It contains five worksheets—sales by category, sales by manufacturer, annual sales trend, sales by battery type, and average customer rating by category—plus the **EV Market Performance & Insights** dashboard. The manufacturer sheet is limited to the top 10 labels by summed annual sales units. A category filter is available on its worksheet, and the dashboard category chart can be used as a filter action. The Tableau Story has an overview scene and an annual-sales-trend scene with captions.
 
-The workbook is an educational draft. KPI cards, more visualizations, a timed performance benchmark, screenshots, and the 5–7 minute recording are not included yet. Customer rating is shown as an average (about 4.09 in the training file); confirm its scale with the mentor before describing it as a score out of 5. Do not publish the packaged data publicly until the mentor confirms redistribution is allowed.
+The workbook is an educational draft. KPI cards, more visualizations, a timed performance benchmark, screenshots, and the 5–7 minute recording are not included yet. Customer rating is shown as an average (about 4.09 in the training file); confirm its scale with the  before describing it as a score out of 5. Do not publish the packaged data publicly until the mentor confirms redistribution is allowed.
 
 ## Project question
 

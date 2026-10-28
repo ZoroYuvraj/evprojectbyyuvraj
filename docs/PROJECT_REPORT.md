@@ -66,6 +66,12 @@ The supplied `ev_market_train.csv` has 200,000 rows and 37 columns; `ev_market_t
 - Data profile output and a 5–7 minute end-to-end screen recording.
 - Git repository containing the data, documentation, script, and final workbook (subject to mentor/institution rules for sharing the CSVs).
 
+## 9A. Implemented in the packaged workbook
+
+The current packaged workbook connects to the supplied training CSV only and includes four views: recorded annual sales units by category, recorded annual sales units by manufacturer (Top 10 filter), annual sales units by model year, and annual sales units by battery type. The dashboard is titled **EV Market Performance & Insights** and arranges these four views on one screen. The category worksheet has a Category filter; the dashboard category chart is enabled as a filter action. The Tableau Story contains two captioned points: the complete dashboard overview and the annual sales trend.
+
+KPI cards, customer-rating analysis, a geographic map, and additional charts from the proposed 8–10 visualization scope have not yet been implemented. A timed performance benchmark and recording are also pending. The workbook's manufacturer filter reduces the view from 200 manufacturer marks to 10; this is a view-size check, not a measured rendering-time benchmark. See [`../reports/PERFORMANCE_NOTES.md`](../reports/PERFORMANCE_NOTES.md).
+
 ## 10. Initial profile results
 
 The repository profile script was run against both files. These are checks and descriptive summaries, not validated real-world market statistics:
@@ -78,7 +84,7 @@ The repository profile script was run against both files. These are checks and d
 - Missing training values: `resale_value_pct_3yr` 6,103; `customer_rating` 3,977; `battery_cycle_life` 3,786; `infotainment_screen_inch` 3,102; `annual_sales_units` 2,028.
 - One repeated `vehicle_id` occurs in training; the distinct ID count is one below the row count. Use `COUNTD(vehicle_id)` for unique-record KPIs and investigate the duplicate before claiming every row is unique.
 
-Complete the Tableau results section with screenshots and explain how interactive filters change the results. The numeric patterns above are in-sample dataset summaries and may not be generalized to real-world EV sales.
+The packaged workbook is available at `tableau/ev_market_performance.twbx`. Capture screenshots and explain how the category filter/action changes the results before submitting. The numeric patterns above are in-sample dataset summaries and may not be generalized to real-world EV sales.
 
 ## 11. Conclusion template
 

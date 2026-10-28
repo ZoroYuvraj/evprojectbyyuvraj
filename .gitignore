@@ -10,3 +10,4 @@ __pycache__/
 *.py[cod]
 
 # Keep the supplied CSV data tracked unless institutional sharing rules require otherwise.
+*.twbr

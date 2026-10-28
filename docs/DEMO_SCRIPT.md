@@ -16,9 +16,9 @@ Use this as a speaking outline while recording the project screen. Replace brack
 
 ## 2:15–4:30 — Show the dashboard
 
-“The KPI row summarizes [name the visible metrics]. The category chart compares recorded annual sales units by vehicle class. The manufacturer chart shows the top [N] labels. The model-year trend shows how the same measure varies across model years. The battery chart compares battery types, and the map shows [record count or sales units] by manufacturing country. This scatter plot compares range and price; it shows association only, not causation.”
+“The dashboard has four views. The category chart compares the recorded annual sales measure across vehicle classes. The manufacturer chart is limited to the top 10 labels by the same measure. The model-year line chart shows how the measure varies across years, and the battery chart compares battery types. Selecting a category in the dashboard can filter the other views. These are patterns in the supplied file; the dataset's source and definitions are unconfirmed.”
 
-Demonstrate one filter at a time: select a market region, then a category, then clear all filters. Point out how the KPI cards and charts respond.
+Demonstrate the Category filter on the category worksheet and the dashboard category selection action. Clear the selection before moving on. Do not mention KPI cards, a map, or a scatter plot as completed—the current workbook does not contain them.
 
 ## 4:30–5:30 — Present findings
 
@@ -26,11 +26,12 @@ Demonstrate one filter at a time: select a market region, then a category, then 
 
 ## 5:30–6:15 — Show the story and close
 
-“The Tableau Story moves from the market snapshot to category and manufacturer comparisons, then the model-year trend, technology trade-offs, and geographic view. The main limitation is missing data provenance and field definitions. With a verified source and definitions, this analysis could be refreshed and compared with authoritative market data. Thank you.”
+“The Tableau Story begins with the four-view market overview and then focuses on the annual sales trend. The main limitation is missing data provenance and field definitions. With a verified source and definitions, this analysis could be refreshed and compared with authoritative market data. Thank you.”
 
 ## Before recording
 
 - Replace all bracketed prompts and rehearse once.
 - Keep the dashboard visible at readable zoom and clear filters before recording.
 - Show the project repository and mention where the guide and profile are stored.
+- Mention that additional KPI cards and geographic/customer-rating analysis are future improvements, not included in this workbook.
 - Do not expose login credentials, private account details, or unpublished tokens in the recording.

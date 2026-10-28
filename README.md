@@ -1,6 +1,12 @@
 # Electric Vehicle Market Performance & Insights
 
-An end-to-end Tableau analytics project built from the supplied EV market train/test CSV files. The repository contains the source data, a repeatable data profile script, a Tableau build guide, a report outline, and presentation notes.
+An end-to-end Tableau analytics project built from the supplied EV market train/test CSV files. The repository contains the source data, a repeatable data profile script, the packaged Tableau workbook, a step-by-step guide, report, and demo notes.
+
+## Current workbook deliverable
+
+Open [`tableau/ev_market_performance.twbx`](tableau/ev_market_performance.twbx) in Tableau Public or Tableau Desktop. It is a packaged workbook with the training CSV included. It contains four worksheets—sales by category, sales by manufacturer, annual sales trend, and sales by battery type—plus the **EV Market Performance & Insights** dashboard. The manufacturer sheet is limited to the top 10 labels by summed annual sales units. A category filter is available on its worksheet, and the dashboard category chart can be used as a filter action. The Tableau Story has an overview scene and an annual-sales-trend scene with captions.
+
+The workbook is a completed educational draft. KPI cards, additional visualizations, a timed performance benchmark, screenshots, and the 5–7 minute recording are not included yet. Do not publish the packaged data publicly until the mentor confirms redistribution is allowed.
 
 ## Project question
 
@@ -17,15 +23,15 @@ The train and test files share the same schema. Field definitions are in [`docs/
 
 ## Start here
 
-1. Read [`docs/PROJECT_REPORT.md`](docs/PROJECT_REPORT.md) for the problem, scope, method, and report structure.
-2. Follow [`docs/TABLEAU_BUILD_GUIDE.md`](docs/TABLEAU_BUILD_GUIDE.md) to connect the data and build sheets, dashboard, and story.
-3. Run `python scripts/profile_data.py` to check row counts, missing values, duplicate IDs, and key summary statistics. The script uses only Python's standard library.
-4. In Tableau Desktop, connect to `data/raw/ev_market_train.csv` as a Text File. Use the train file for all published visuals so the measures are not accidentally double-counted with the test file.
-5. Save the workbook as `tableau/ev_market_performance.twbx` and add screenshots/exported images to `reports/` as you complete the project.
+1. Open the packaged workbook linked above.
+2. Read [`docs/PROJECT_REPORT.md`](docs/PROJECT_REPORT.md) for scope, methodology, dataset findings, and limitations.
+3. Follow [`docs/TABLEAU_BUILD_GUIDE.md`](docs/TABLEAU_BUILD_GUIDE.md) for field definitions, chart setup, filters, and further extensions.
+4. Run `python scripts/profile_data.py` to reproduce the row counts, missing values, duplicate IDs, and summary statistics. The script uses only Python's standard library.
+5. Use [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) as the outline for the required 5–7 minute recording; replace bracketed prompts and capture the final workbook screen.
 
-## Suggested dashboard
+## Future improvements
 
-Build a single-screen dashboard with KPI cards for total vehicles, manufacturers, models, annual sales units, average price, average range, and average customer rating; then add category performance, manufacturer sales, sales by model year, battery mix, customer ratings by category, and a manufacturing-country map. Add filters for model year, market region, manufacturer, category, and battery type.
+Add KPI cards for distinct vehicles, manufacturers, models, and average range; expand to customer ratings and geographic analysis; and add model-year, region, manufacturer, and battery filters. Record a timed benchmark on the target computer and check the workbook after packaging.
 
 ## Repository layout
 
@@ -46,4 +52,4 @@ reports/        Profile output and final screenshots/report assets
 
 ## Suggested project completion status
 
-The repository and data preparation plan are ready. Complete the Tableau workbook, test interactions in Tableau, publish only after mentor review, and record the required 5–7 minute walkthrough. See the checklist in the build guide.
+The local packaged workbook and project materials are ready for review. Publishing and public redistribution still require mentor confirmation; the 5–7 minute walkthrough must be recorded by the student.
